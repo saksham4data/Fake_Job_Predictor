@@ -2,7 +2,7 @@
 """
 Fake Job Predictor Model 
 Trainig Script with Error Handling and Model Persistence
-
+Author - Saksham Nagar
 """
 import re
 import pandas as pd
@@ -113,7 +113,7 @@ class FakeJobModel:
             X_train,X_test,y_train,y_test = train_test_split(
                 X,y,test_size=0.2,random_state=42,stratify=y
             )
-            print(f"Train size: {len(X_train)}, Test size: {len(X_test)}")
+            print(f"Train size: {X_train.shape[0]}, Test size: {X_test.shape[0]}")
 
             #Train model
             self.model = LogisticRegression(class_weight='balanced', max_iter=1000)
@@ -196,10 +196,10 @@ class FakeJobModel:
             X,tfidf = self.tfidf_vectorize(self.df['text'])
 
             #Train model
-            if self.fraudulent not in self.df.columns:
+            if 'fraudulent' not in self.df.columns:
                 raise KeyError("Target column Fraudulent not found")
             else:
-                X_train,X_test,y_train,y_test = self.train_model(X,self.df[self.fraudulent])
+                X_train,X_test,y_train,y_test = self.train_model(X,self.df['fraudulent'])
 
             #Evaluate model
             self.evaluate_model(X_test,y_test)
@@ -219,5 +219,5 @@ class FakeJobModel:
             raise
 
 if __name__ == "__main__":
-    model = FakeJobModel('fake_job_postings.csv')
+    model = FakeJobModel('Data/cleaned_data.csv')
     model.main()
