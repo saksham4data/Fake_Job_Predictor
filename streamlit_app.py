@@ -96,6 +96,11 @@ if st.button("Analyze Job"):
     if not user_input.strip():
         st.warning("Please enter a job description.")
     else:
+        word_count = len(user_input.split())
+
+        if word_count < 30 or len(user_input) < 100:
+             st.warning("⚠️ Please provide a proper job description (minimum 30 words)")
+             st.stop()
         prediction, prob = predict(user_input, model, tfidf)
 
         if prediction is not None:
