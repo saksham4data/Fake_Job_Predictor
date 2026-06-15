@@ -1,21 +1,21 @@
-# 🕵️ Fake Job Predictor
+#Fake Job Predictor
 
 Fake Job Predictor is a machine learning-based application that detects fraudulent job postings by analyzing their descriptions. It uses Natural Language Processing (TF-IDF) and a Logistic Regression model to identify scam patterns and provide predictions along with a risk score.
 
 ---
 
-## 🚀 Features
+##Features
 
-* 🔍 Detects whether a job posting is **Real or Fraudulent**
-* 🧠 Uses NLP (TF-IDF) for text feature extraction
-* ⚖️ Handles imbalanced data using `class_weight='balanced'`
-* 📊 Provides **risk/confidence score**
-* 💻 Interactive **Streamlit UI**
-* 🛡️ Includes error handling for robust performance
+*  Detects whether a job posting is **Real or Fraudulent**
+*  Uses NLP (TF-IDF) for text feature extraction
+*  Handles imbalanced data using `class_weight='balanced'`
+*  Provides **risk/confidence score**
+*  Interactive **Streamlit UI**
+*  Includes error handling for robust performance
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 Fake_Job_Predictor/
@@ -39,7 +39,7 @@ Fake_Job_Predictor/
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. **Data Preprocessing**
 
@@ -64,7 +64,7 @@ Fake_Job_Predictor/
 
 ---
 
-## 🧪 Model Performance
+## Model Performance
 
 * High recall for fraudulent jobs (important for scam detection)
 * Balanced trade-off between precision and recall
@@ -77,7 +77,7 @@ Fake_Job_Predictor/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Clone the repository
 
@@ -100,7 +100,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🧾 Input Format
+## Input Format
 
 Paste any job description like:
 
@@ -110,14 +110,14 @@ Paste any job description like:
 
 ---
 
-## 📌 Output
+##  Output
 
-* ✅ Real Job (Confidence Score)
-* ⚠️ Fraudulent Job (Risk Score)
+*  Real Job (Confidence Score)
+*  Fraudulent Job (Risk Score)
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 * Model depends on text patterns → may misclassify well-written scams
 * Performance depends on training data quality
@@ -125,21 +125,17 @@ Paste any job description like:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Add explainability (highlight suspicious words)
 * Use advanced NLP models (BERT, transformers)
-* Deploy as web service
+* Deploy as web service 
 * Integrate real-time job validation APIs
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Saksham Nagar**
 
----
-
-## 📜 License
-
-This project is open-source and available under the MIT License.
+--
