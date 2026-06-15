@@ -1,10 +1,10 @@
-#Fake Job Predictor
+# Fake Job Predictor
 
 Fake Job Predictor is a machine learning-based application that detects fraudulent job postings by analyzing their descriptions. It uses Natural Language Processing (TF-IDF) and a Logistic Regression model to identify scam patterns and provide predictions along with a risk score.
 
 ---
 
-##Features
+## Features
 
 *  Detects whether a job posting is **Real or Fraudulent**
 *  Uses NLP (TF-IDF) for text feature extraction
@@ -138,4 +138,4 @@ Paste any job description like:
 
 **Saksham Nagar**
 
---
+---
